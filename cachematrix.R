@@ -24,7 +24,7 @@ cacheSolve <- function(x, ...) {
         inv<-x$getinverse()
   if(!is.null(inv)){
     print("getting cached contents")
-    return(i)
+    return(inv)
   }
   d<-x$get()
   inv<-solve(d)
